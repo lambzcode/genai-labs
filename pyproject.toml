@@ -1,0 +1,37 @@
+[project]
+name = "generative-ai-labs"
+version = "0.1.0"
+description = "One environment for the Generative AI lab sessions (sessions 01 to 08)"
+requires-python = ">=3.12"
+dependencies = [
+    # Jupyter
+    "ipykernel",
+    "ipywidgets",
+    "jupyterlab",
+    # Sessions 01 to 03, 07: transformers, tokenizers, fine-tuning, diffusion
+    "torch",
+    "transformers",
+    "tokenizers",
+    "datasets",
+    "accelerate",
+    "peft",
+    "diffusers",
+    "torchmetrics[image]",
+    # Sessions 04 to 06, 08: prompting, RAG, agents, evaluation
+    "anthropic",
+    "openai",
+    "ollama",
+    "pydantic",
+    "sentence-transformers",
+    "rank-bm25",
+    "scikit-learn",
+    "langgraph",
+    "langchain-core",
+    "langchain-ollama",
+    "langchain-openai",
+    # Data and plots
+    "numpy",
+    "polars",
+    "matplotlib",
+    "plotly",
+]
